@@ -1,20 +1,10 @@
 #include <stdio.h>
-#include <unistd.h>
+/*Write a C program that creates two processes: 
+ * parent and child. Both will print “I am the father” or “I am the son”, 
+ * as the case may be, and at the end they will print Bye and his pid and his father's pid.
+ * Important: the father should get some sleep to give the child  time to finish and see the pid well.
+ */
 
 int main () {
-	int x=0,pid;
-	pid=fork (); /*Child process is created */
-	if (pid == 0){ 
-		printf ("I am the son\n"); /* Written by the child on the screen*/
-		printf ("By daddy; x=%d, pid=%d ppid=%d\n",x,getpid(), getppid()); 
-	}
-	else { 
-		/* without sleep () parent could ends before the child, 
-		 * it will show that the new parent of the child is process 1 (init). 
-		 * That is because, when the parent dies, init adopts the child so that it does not become a zombie.
-*/
-		sleep(1);
-		printf ("I am the father\n"); /* Written by the parent on the screen*/
-		printf ("Adios padre; x=%d, pid=%d ppid=%d\n",x,getpid(), getppid()); 
-  }
+
 } 

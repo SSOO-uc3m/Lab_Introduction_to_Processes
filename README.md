@@ -15,10 +15,6 @@ int main () {
 
 }
 ````
----
-
-![Exercise01](img/Exercise01.png)
-
 
 ##  2.- Write a C program that creates two processes:
 
@@ -49,36 +45,6 @@ main (){
 
 Which order could they appear?
 
----
-
-
-An execution example:
-
-``
-Hi
-One
-One
-Two pid=12009
-Two pid=12011
-Two pid=12010
-Two pid=12012
-``
-
-````
-The reason is that every time a fork () is made, two processes appear. 
-Therefore after the first fork () there are 2 processes, 
-which also fork (), resulting in 4 processes (22).
-
-SO:
-Hi appears one time
-One appears 2 times
-Two appears 4 times
-
- The order may vary depending on the order of execution of the processes in each case,
- which depends on the system scheduler.
- It is recommended to run the example several times to test it
-````
-
 ##  4.- When you execute the following program, how many time will you see "I am son n" ? 
 
 State your answer
@@ -103,19 +69,6 @@ main () {
 }
 
 ````
----
-
-````
-Output of execution:
- 
-I am the child 1
-I am the child 2
- 
-The reason is that although 2 fork () are made, in each case only runs a child process. 
-
-And this one does not fork () because it prints a message and ends with exit (). 
-````
-
 ##  5
 
 ### 5.1- Write a C program that creates a child program that executes a command received as an argument. The father ends up without doing more.
@@ -127,5 +80,6 @@ And this one does not fork () because it prints a message and ends with exit ().
 ###  6.1- Write a program that creates 5 children.
 
 ###  6.2- modify it to create 5 children and 3 grandchildren.
+
 
 
