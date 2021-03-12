@@ -3,11 +3,11 @@
   <Project Name="Exercise_01" Path="Exercise_01/Exercise_01.project" Active="No"/>
   <Project Name="Exercise_02" Path="Exercise_02/Exercise_02.project" Active="No"/>
   <Project Name="Exercise_03" Path="Exercise_03/Exercise_03.project" Active="No"/>
-  <Project Name="Exercise_04" Path="Exercise_04/Exercise_04.project" Active="No"/>
-  <Project Name="Exercise_05.1" Path="Exercise_05.1/Exercise_05.1.project" Active="No"/>
-  <Project Name="Exercise_05.2" Path="Exercise_05.2/Exercise_05.2.project" Active="No"/>
-  <Project Name="Exercise_06.2" Path="Exercise_06.2/Exercise_06.2.project" Active="Yes"/>
-  <Project Name="Exercise_06.1" Path="Exercise_06.1/Exercise_06.1.project" Active="No"/>
+  <Project Name="Exercise_04" Path="Exercise_04/Exercise_04.project" Active="Yes"/>
+  <Project Name="Exercise_06" Path="Exercise_06.2/Exercise_06.project" Active="No"/>
+  <Project Name="Exercise_06" Path="Exercise_06.1/Exercise_06.project" Active="No"/>
+  <Project Name="Exercise_05" Path="Exercise_05.2/Exercise_05.project" Active="No"/>
+  <Project Name="Exercise_05" Path="Exercise_05.1/Exercise_05.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -19,6 +19,10 @@
       <Project Name="Exercise_05.2" ConfigName="Debug"/>
       <Project Name="Exercise_06.2" ConfigName="Debug"/>
       <Project Name="Exercise_06.1" ConfigName="Debug"/>
+      <Project Name="Exercise_06.2" ConfigName="Debug"/>
+      <Project Name="Exercise_06.1" ConfigName="Debug"/>
+      <Project Name="Exercise_05.2" ConfigName="Debug"/>
+      <Project Name="Exercise_05.1" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -30,6 +34,10 @@
       <Project Name="Exercise_05.2" ConfigName="Release"/>
       <Project Name="Exercise_06.2" ConfigName="Release"/>
       <Project Name="Exercise_06.1" ConfigName="Release"/>
+      <Project Name="Exercise_06.2" ConfigName="Release"/>
+      <Project Name="Exercise_06.1" ConfigName="Release"/>
+      <Project Name="Exercise_05.2" ConfigName="Release"/>
+      <Project Name="Exercise_05.1" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
