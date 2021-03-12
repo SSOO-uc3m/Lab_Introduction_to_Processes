@@ -15,6 +15,8 @@ int main () {
 
 }
 ````
+---
+
 ![Exercise01](img/Exercise01.png)
 
 
@@ -47,6 +49,9 @@ main (){
 
 Which order could they appear?
 
+---
+
+
 An execution example:
 
 ``
@@ -60,14 +65,18 @@ Two pid=12012
 ``
 
 ````
-The reason is that every time a fork () is made, two processes appear. Therefore after the first fork () there are 2 processes, which also fork (), resulting in 4 processes (22).
+The reason is that every time a fork () is made, two processes appear. 
+Therefore after the first fork () there are 2 processes, 
+which also fork (), resulting in 4 processes (22).
 
 SO:
 Hi appears one time
 One appears 2 times
 Two appears 4 times
 
- The order may vary depending on the order of execution of the processes in each case, which depends on the system scheduler. It is recommended to run the example several times to test it
+ The order may vary depending on the order of execution of the processes in each case,
+ which depends on the system scheduler.
+ It is recommended to run the example several times to test it
 ````
 
 ##  4.- When you execute the following program, how many time will you see "I am son n" ? 
@@ -94,6 +103,7 @@ main () {
 }
 
 ````
+---
 
 ````
 Output of execution:
